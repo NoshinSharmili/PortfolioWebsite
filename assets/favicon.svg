@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="16" fill="#18181b"/>
-  <text x="32" y="43" font-family="'PT Sans', Arial, sans-serif" font-weight="700" font-size="30" text-anchor="middle" fill="#ffffff">p<tspan fill="#FF6B2B">mi</tspan></text>
+  <text x="32" y="43" font-family="'PT Sans', Arial, sans-serif" font-weight="700" font-size="30" text-anchor="middle" fill="#ffffff">p<tspan fill="#2A6FDB">mi</tspan></text>
 </svg>
