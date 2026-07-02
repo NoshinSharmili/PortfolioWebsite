@@ -151,7 +151,15 @@ a{cursor:pointer}
 
 /* ═══ ACHIEVEMENTS ═══ */
 .achievements-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.achievement-feature{background:var(--panel);border:1px solid var(--panel-bd);border-radius:16px;padding:32px;grid-column:1 / -1;transition:border-color .2s,background .3s}
+
+.achievement-photo{width:100%;overflow:hidden;background:var(--card-bd)}
+.achievement-photo img{width:100%;height:200px;object-fit:cover;object-position:center;display:block;transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.achievement-photo--feature img{height:260px}
+.achievement-feature:hover .achievement-photo img,
+.achievement-card:hover .achievement-photo img{transform:scale(1.04)}
+.achievement-body{padding:24px 32px 32px}
+
+.achievement-feature{background:var(--panel);border:1px solid var(--panel-bd);border-radius:16px;padding:0;overflow:hidden;grid-column:1 / -1;transition:border-color .2s,background .3s}
 .achievement-feature:hover{border-color:var(--accent)}
 .achievement-feature-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:14px}
 .achievement-feature-title-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
@@ -160,7 +168,7 @@ a{cursor:pointer}
 .achievement-feature-year{font-size:13px;color:#a1a1aa}
 .achievement-feature-desc{font-size:14px;color:#a1a1aa;line-height:1.7;margin:0}
 
-.achievement-card{background:var(--card);border:1px solid var(--card-bd);border-radius:16px;padding:28px;transition:transform .28s cubic-bezier(.4,0,.2,1),border-color .2s,background .3s}
+.achievement-card{background:var(--card);border:1px solid var(--card-bd);border-radius:16px;padding:0;overflow:hidden;transition:transform .28s cubic-bezier(.4,0,.2,1),border-color .2s,background .3s}
 .achievement-card:hover{transform:translateY(-4px);border-color:var(--accent)}
 .achievement-card-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
 .achievement-tag{font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
